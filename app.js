@@ -21,17 +21,29 @@ simulate.addEventListener('click', function(){
 
     // 3.
     const floorValue = document.querySelector("#floorNumber")
-    const floorshow = parseInt(floorValue.value)
+    const floorshow = parseInt(floorValue.value)   //4
     
     for (let i = 0 ; i< floorshow; i++){
         
 
 
         const floorCreate = document.createElement("div")
-        floorCreate.id = "floor"
+        floorCreate.className = "floor"
+        const floorName = document.createElement("p")
+ 
+        floorName.textContent = " Floor: " + `${floorshow-i}` //4-2-0
+
+        floorName.className = "floorCounting"
+
+        floorCreate.appendChild(floorName)
+
         document.body.appendChild(floorCreate)
 
+        console.log(floorCreate.innerHTML)
+
     }
+
+
 
 
     
