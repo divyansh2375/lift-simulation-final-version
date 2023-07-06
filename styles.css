@@ -2,8 +2,16 @@
     background-color: black;
     height: 150px;
     outline: 6px solid red;
-    margin: 20px;
+    /* margin: 20px; */
 }
 .floorCounting{
     color: white;
+}
+.lift{
+    background-color: blue;
+    height: 100px;
+    width: 50px;
+    margin: 0 6px 0 80px;
+    
+
 }
